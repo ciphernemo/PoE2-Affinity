@@ -1,6 +1,6 @@
 # PoE2-Affinity
 
-Sets CPU affinity and priority for the Steam-based PoE2 process.
+Sets CPU affinity and priority for the Steam-based PoE2 process. This is done by automtically changing the Launch Options for PoE2 in Steam.
 
 ![PoE2 Exalted Orb](https://raw.githubusercontent.com/ciphernemo/PoE2-Affinity/refs/heads/main/exalted_orb.png)
 
