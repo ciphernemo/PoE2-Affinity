@@ -2,7 +2,7 @@
 
 Sets CPU affinity and priority for the Steam-based PoE2 process.
 
-![PoE2 Exalted Orb](https://pathofexile2.wiki.fextralife.com/file/Path-of-Exile-2/exalted_orb_items_path_of_exile_2_wiki_guide_100px.png)
+![PoE2 Exalted Orb](https://raw.githubusercontent.com/ciphernemo/PoE2-Affinity/refs/heads/main/exalted_orb.png)
 
 ## Script's Process
 1. Searches system for Steam and PoE2 via registry keys, the default install location, then recursive drive search. If multiple locations are found, prompt user for preferred location.
