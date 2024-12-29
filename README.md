@@ -22,4 +22,4 @@ Sets CPU affinity and priority for the Steam-based PoE2 process. This is done by
 * Compiled with PS2EXE-GUI [Invoke-PS2EXE] v0.5.0.30 by Ingo Karstein & Markus Scholtes: https://github.com/MScholtes/PS2EXE
 
 ## Instructions
-Download the pre-compiled executable within the "poe2_affinity.zip" file. Extract it anywhere, and run it. The program will walk you through the rest.
+Download from the current release (https://github.com/ciphernemo/PoE2-Affinity/releases/download/1.0/poe2_affinity.exe), then run the executable.
