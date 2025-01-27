@@ -368,7 +368,12 @@ $cpuInfo = Get-CPUInfo
 [int]$cpuThreads = $cpuInfo[2]
 Write-Log ("Your system: " + $cpuInfo[0] + " with " + $cpuInfo[1] + " cores and " + $cpuInfo[2] + " total threads available.")
 [System.Management.Automation.Host.ChoiceDescription[]]$choicesThreads = @()
-for ($i = 0; $i -lt $cpuThreads - 1; $i++) { $choicesThreads += "`&$i" }
+for ($i = 0; $i -lt $cpuThreads - 1; $i++)
+{
+	#if more threads than 8, skip (no need to reserve more than 8)
+	if ($i -gt 8) { break }
+	$choicesThreads += "`&$i"
+}
 $titleThreads = "`nPlease choose the number of CPU threads you want to withhold from Poe2."
 $promptThreads = "It is recommended to withhold at least one of your CPU's cores (~2 threads). "
 $promptThreads += "Typically there are 2 threads for every hyperthreading/SMT/performance core."
